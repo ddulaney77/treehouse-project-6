@@ -1,0 +1,31 @@
+//media queries
+  @mixin mq($break) {
+ @if $break == "small" {
+    @media(min-width:$brkpoint-s) and (max-width:$brkpoint-m) {
+      @content;
+      }
+    }
+  @else if $break == "medium" {
+    @media(min-width: $brkpoint-m) {
+      @content;
+}
+}
+  @else if $break == "large" {
+   @media(min-width:$brkpoint-l) {
+      @content;
+    }
+  }
+  @else {
+  @error "Whoops! No value could be retrieved for '#{$break}' ";
+}
+}
+
+
+//button background color
+@mixin btn-bg-colors($map){
+  @each $theme, $color in $map {
+    &--#{$theme}{
+    background-color: $color;
+  }
+}
+}

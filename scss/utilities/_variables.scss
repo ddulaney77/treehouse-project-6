@@ -1,0 +1,44 @@
+
+//font path
+$font-url--google: "https://fonts.googleaips.com/css?family=Roboto:100,300,400,500,700,900";
+
+//font family stack for main styles
+$font-family--primary: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family--secondary: "Roboto", Helvetica, Arial, sans-serif;
+
+
+
+//font weights
+$font-weight-light: 300;
+$font-weight-base: 500;
+$font-weight-dark: 900;
+
+//font sizes
+$font-size--small: 14px;
+$font-size--base: 16px;
+$font-size--large: 20px;
+$font-size--xlrg: 24px;
+
+//media query breakpoint
+$brkpoint-s : 480px;
+$brkpoint-m : 768px;
+$brkpoint-l:  1024px;
+
+
+//descriptive color-secondary
+$white: #fff;
+$black: #000;
+$grey: #878787;
+$grey-palette: (
+                  light: lighten( grey, 15%),
+                  base: grey,
+                  dark: darken(grey, 20%)
+                  );
+
+
+
+    //grid widths
+      $g-col-width: 65px;
+      $g-gutter-width: 20px;
+      $g-col-count: 12;
+      $g-cont-max-w: 1050px;
