@@ -5,5 +5,4 @@ $('video').mediaelementplayer({
               'tracks',
               'volume',
               'fullscreen'],
-    startLanguage:'en',
 });
