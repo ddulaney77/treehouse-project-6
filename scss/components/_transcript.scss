@@ -1,0 +1,27 @@
+
+
+p {
+  padding-left: 20px;
+  padding-right: 20px;
+  @include mq(medium) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  span {
+    color: darken(darkgray, 10%);
+    font-size: $font-size--base;
+    line-height: $font-size--base * 2;
+    @include mq(medium) {
+      font-size: $font-size--large;
+      line-height: $font-size--large * 2;
+    }
+    &:hover {
+    cursor:pointer;
+    border-bottom: 1px dashed lightgray;
+    }
+  }
+}
+
+.mejs__controls {
+background: rgba(orange,0.7) !important;
+}

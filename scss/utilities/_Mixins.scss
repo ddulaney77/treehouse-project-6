@@ -19,13 +19,3 @@
   @error "Whoops! No value could be retrieved for '#{$break}' ";
 }
 }
-
-
-//button background color
-@mixin btn-bg-colors($map){
-  @each $theme, $color in $map {
-    &--#{$theme}{
-    background-color: $color;
-  }
-}
-}

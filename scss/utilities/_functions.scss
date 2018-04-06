@@ -4,18 +4,6 @@
   @return ($target / $context) * 1em;
 }
 
-
-
-/*set context for fluid width
-$context: g-context($g-col-width, $g-col-count, $g-gutter-width,);
-$target: ($g-col-width + $i) + ($g-gutter-width + ($i - 1 ));
-*/
-
-@function g-context($g-col-width,
-                    $g-col-count,
-                    $g-gutter-width){
-
-
-$g-context:($g-col-width * $g-col-count)+ ($g-gutter-width * ($g-col-count - 1));
-  @return $g-context;
+@if variable-exists(font-url--google) {
+  @import url($font-url--google);
 }
